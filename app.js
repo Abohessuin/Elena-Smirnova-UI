@@ -2,7 +2,7 @@
 
 
 const countDown = ()=>{
-    var countDownDate = new Date("Feb 28, 2021 16:45:00").getTime();
+    var countDownDate = new Date("March 14, 2021 16:45:00").getTime();
     
     var x = setInterval(function() {
     var now = new Date().getTime();

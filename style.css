@@ -10,6 +10,7 @@
     display:flex;
     justify-content: flex-end;
     position: relative;
+    background-color: ;
     
 
 }
@@ -86,7 +87,7 @@ nav{
 .halfoval{
     height:90%;
     width:90%;
-    background-color:rgb(172, 236, 205);
+    background-color:rgb(203, 184, 223);
     clip-path: circle(49.0% at 25% 18%);
     opacity: 1;
 
