@@ -1,0 +1,777 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    overflow:hidden;
+}
+.container{
+    width:100vw;
+    height:100vh;
+    display:flex;
+    justify-content: flex-end;
+    position: relative;
+    
+
+}
+
+nav{
+    min-height:15vh;
+    width:100vw;
+    display:flex;
+    position:fixed;
+    top: 0%;
+    left: 0%;
+    justify-content:space-between;
+    z-index: 1;
+    
+}
+.enterControls{
+    margin-right: 4rem;
+    margin-top:1rem;
+    display:flex;
+    justify-content:space-evenly;
+    width: 16%;
+    cursor: pointer;
+}
+.logBtn{
+    background-color:transparent;
+    border:none;
+    color:rgb(33, 179, 79); 
+    margin-left: 1rem;
+    cursor: pointer;
+    text-align: center;
+    font-size:0.7vw;
+    padding:.5rem;
+    margin-top:0.3rem;
+}
+
+.signBtn{
+    background-color:rgb(33, 179, 79);
+    padding:.5rem;
+    border-radius: 10px;
+    border:none;
+    text-align:center;
+    width:5rem;
+    height:2.2rem;
+   color:white;
+   font-size:0.7vw;   
+}
+.logo{
+    color:green;
+    font-size:2vw;
+}
+.firstshape{
+    height: 100vh;
+    width: 30vw;
+    background-color: rgb(220, 254, 236);
+   
+    
+    
+
+    
+}
+
+.clock{
+    width:70vw;
+    height:100vh;
+  
+    border-bottom: none;
+    border-top: none;
+    border-left: none;
+    position: relative;
+    z-index: 2;
+    opacity: 0.95;
+}
+
+.halfoval{
+    height:90%;
+    width:90%;
+    background-color:rgb(172, 236, 205);
+    clip-path: circle(49.0% at 25% 18%);
+    opacity: 1;
+
+    
+    
+}
+
+.firsttext{
+    font-size:3vw;
+    color:rgb(37, 75, 47);
+}
+.sectext{
+    font-style:  normal;
+    font-weight:100;
+    color: rgb(99, 111, 108);
+}
+
+.countdown{
+    display:flex;
+    width:70%;
+    justify-content:space-between;  
+    
+}
+
+.overlayContent{
+    opacity: 1;
+    position:absolute;
+    top:25%;
+    left: 23%;
+    width:55%;
+    height:40%;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+
+    
+}
+    
+
+.launchingInfo{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    width:100%;
+    height:70%;
+}
+
+
+.shapesquere{
+   width:95px;
+   height:95px;    
+   background-color: white;
+   border-radius:8%;
+   text-align:center;   
+   display:flex;
+   flex-direction:column;
+   justify-content:center;
+   align-items:center;
+   font-size:2vw;
+   color:rgb(42, 74, 47);
+   font-weight:700;
+   
+   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+
+   border: 3px solid rgb(252, 252, 255);
+  
+    
+
+}
+
+
+.st{
+    font-size:1vw;
+    font-weight:300;
+}
+
+form{
+    font-size:0.5vw;
+   
+    z-index: 100;
+}
+.emailInput{
+ 
+  border: 1px solid rgb(83, 203, 128);
+  width:35%;  
+  padding:1%;
+  border-radius:6px ;
+  outline: none !important;
+  
+}
+
+.submitButt{
+    background-color: rgb(33, 179, 79);
+    color:white;
+    width:14%;
+    height:35px;
+    border-radius: 9px; 
+    outline: none !important;
+    border:none !important;
+    box-shadow:1.5px 1.5px 1.5px rgb(33, 179, 79);
+    font-size:0.7vw;
+    margin-left: 1rem;   
+    cursor: pointer;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+   
+     
+    font-size: 0.7vw;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    
+ 
+    font-size: 0.7vw;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   
+     
+    font-size: 0.7vw;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  
+    font-size: 0.7vw;
+}
+
+
+.clock2 {
+  background-color: white;
+  width: 1650px;
+  height: 1650px;
+  border-radius: 50%;
+  animation: clock 100s infinite linear;
+  position:absolute;
+  top: -60%;
+  right: 14%;
+  
+
+}
+@keyframes clock {
+  from {
+  
+    transform: rotateZ(360deg);
+  }
+  to {
+    transform: rotateZ(0deg);
+  }
+}
+
+.indicator {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: relative;
+}
+.indicator div {
+  position: absolute;
+  width: 5px;
+  height: 20px;
+  background-color: rgb(219, 248, 209);
+}
+.indicator div:nth-child(1) {
+    transform: rotate(30deg);
+    left: 72%;
+    top: 8%;
+  }
+  .indicator div:nth-child(17) {
+    transform: rotate(10deg);
+    left: 61.5%;
+    top: 4%;
+  }
+  .indicator div:nth-child(2) {
+    transform: rotate(60deg);
+    left: 85%;
+    top: 23%;
+  }
+  .indicator div:nth-child(18) {
+    transform: rotate(55deg);
+    left: 80%;
+    top: 15%;
+  }
+  .indicator div:nth-child(3) {
+    transform: rotate(75deg);
+    left: 92%;
+    top: 38%;
+  }
+  .indicator div:nth-child(19) {
+    transform: rotate(65deg);
+    left: 89%;
+    top: 30%;
+    
+  }
+  .indicator div:nth-child(4) {
+    transform: rotate(90deg);
+    left: 94%;
+    top: 53%;
+  }
+  
+  .indicator div:nth-child(20) {
+    transform: rotate(85deg);
+    left: 94%;
+    top: 45%;
+    
+  }
+  .indicator div:nth-child(5) {
+    transform: rotate(110deg);
+    left: 90%;
+    top: 70%;
+  }
+  .indicator div:nth-child(21) {
+    transform: rotate(100deg);
+    left: 93%;
+    top: 61%;
+    
+  }
+  .indicator div:nth-child(6) {
+    transform: rotate(130deg);
+    left: 82%;
+    top: 82%;
+  }
+  
+  .indicator div:nth-child(22) {
+    transform: rotate(120deg);
+    left: 86.5%;
+    top: 76%;
+   
+  }
+  
+  .indicator div:nth-child(7) {
+    transform: rotate(160deg);
+    left: 70%;
+    top: 91%;
+  }
+  .indicator div:nth-child(23) {
+    transform: rotate(150deg);
+    left: 76%;
+    top: 87%;
+    
+  }
+  
+  .indicator div:nth-child(8) {
+    transform: rotate(180deg);
+    left: 50%;
+    top: 95%;
+  }
+  .indicator div:nth-child(24) {
+    transform: rotate(170deg);
+    left: 60%;
+    top: 94%;
+   
+  }
+  .indicator div:nth-child(9) {
+    transform: rotate(200deg);
+    left: 32%;
+    top: 92%;
+  }
+  .indicator div:nth-child(25) {
+    transform: rotate(190deg);
+    left: 41%;
+    top: 94.5%;
+   
+  }
+  
+  .indicator div:nth-child(10) {
+    transform: rotate(220deg);
+    left: 17%;
+    top: 82%;
+  }
+  
+  .indicator div:nth-child(26) {
+    transform: rotate(210deg);
+    left: 24%;
+    top: 88%;
+  
+  }
+  .indicator div:nth-child(28) {
+    transform: rotate(230deg);
+    left: 12%;
+    top: 77%;
+    
+  }
+  .indicator div:nth-child(11) {
+    transform: rotate(250deg);
+    left: 8%;
+    top: 70%;
+  }
+  .indicator div:nth-child(27) {
+    transform: rotate(260deg);
+    left: 5%;
+    top: 62%;
+    
+  }
+  .indicator div:nth-child(12) {
+    transform: rotate(270deg);
+    left: 4%;
+    top: 53%;
+  }
+  .indicator div:nth-child(29) {
+    transform: rotate(280deg);
+    left: 4%;
+    top: 45%;
+   
+  }
+  .indicator div:nth-child(13) {
+    transform: rotate(300deg);
+    left: 5%;
+    top: 38%;
+  }
+  .indicator div:nth-child(30) {
+    transform: rotate(310deg);
+    left: 8%;
+    top: 30%;
+    
+  }
+  .indicator div:nth-child(14) {
+    transform: rotate(320deg);
+    left: 13%;
+    top: 22%;
+  }
+  .indicator div:nth-child(31) {
+    transform: rotate(330deg);
+    left: 20%;
+    top: 14%;
+   
+  }
+  .indicator div:nth-child(15) {
+    transform: rotate(340deg);
+    left: 28%;
+    top: 8%;
+  }
+  .indicator div:nth-child(31) {
+    transform: rotate(335deg);
+    left: 20%;
+    top: 14%;
+    
+  }
+  .indicator div:nth-child(16) {
+    transform: rotate(360deg);
+    left: 50%;
+    top: 3%;
+  }
+  .indicator div:nth-child(32) {
+    transform: rotate(350deg);
+    left: 39%;
+    top: 4%;
+    
+  }
+
+@media(max-width:1024px){
+    .shapesquere{
+        width: 50px;
+        height:40px;
+    }
+    
+    .overlayContent{
+   
+        top:16%;
+        left: 46%;
+        width:55%;
+        height:21%;
+
+    
+        
+    }
+
+    .sectext{
+      font-size: 2vw;
+    }
+    
+    .countdown{
+        display:flex;
+        width:100%;
+        justify-content:space-between;  
+        
+    }
+
+    .emailInput{
+ 
+   
+        width:60%;
+        height:20px;  
+       
+        
+      }
+      
+      .submitButt{
+         
+          width:30px;
+          height:25px;
+          margin-left: 0.5rem;
+          border-radius:5px;
+       
+      }
+      ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+   
+     
+        font-size: 1.5vw;
+    }
+    :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+        
+     
+        font-size: 1.5vw;
+    }
+    ::-moz-placeholder { /* Mozilla Firefox 19+ */
+       
+         
+        font-size: 1.5vw;
+    }
+    :-ms-input-placeholder { /* Internet Explorer 10-11 */
+      
+        font-size: 1.5vw;
+    }
+
+    .firstshape{
+        height: 100vh;
+        width:50vw;
+        clip-path: polygon(40% 0, 100% 0, 100% 53%, 100% 81%, 100% 100%, 34% 100%, 47% 80%, 53% 55%, 49% 28%);
+        
+    
+        
+    }
+
+    .enterControls{
+        margin-right: 2rem;
+        margin-top:1rem;
+        display:flex;
+        justify-content:space-evenly;
+        width: 20%;
+        cursor: pointer;
+    }
+    .logBtn{
+       
+        margin-left: 1rem;
+       font-size:1vw;
+        padding:.5rem;
+      
+    }
+    
+    .signBtn{
+      
+        padding:.5rem;
+        border-radius: 8px;
+        width:3rem;
+        height:1.5rem;
+        margin-top: 0.3rem;
+      
+    
+    }
+    .clock2 {
+       
+        width: 3050px;
+        height: 3050px;
+         top: -60%;
+        right: 12%;
+        
+      
+      }
+}
+
+
+@media(max-width:770px){
+    .shapesquere{
+        width: 50px;
+        height:40px;
+    }
+    
+    .overlayContent{
+   
+        top:16%;
+        left: 46%;
+        width:55%;
+        height:21%;
+
+    
+        
+    }
+
+    .sectext{
+      font-size: 2vw;
+    }
+    
+    .countdown{
+        display:flex;
+        width:100%;
+        justify-content:space-between;  
+        
+    }
+
+    .emailInput{
+ 
+   
+        width:60%;
+        height:20px;  
+       
+        
+      }
+      
+      .submitButt{
+         
+          width:30px;
+          height:25px;
+          margin-left: 0.5rem;
+          border-radius:5px;
+       
+      }
+      ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+   
+     
+        font-size: 1.5vw;
+    }
+    :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+        
+     
+        font-size: 1.5vw;
+    }
+    ::-moz-placeholder { /* Mozilla Firefox 19+ */
+       
+         
+        font-size: 1.5vw;
+    }
+    :-ms-input-placeholder { /* Internet Explorer 10-11 */
+      
+        font-size: 1.5vw;
+    }
+
+    .firstshape{
+        height: 100vh;
+        width:50vw;
+        clip-path: polygon(40% 0, 100% 0, 100% 53%, 100% 81%, 100% 100%, 34% 100%, 47% 80%, 53% 55%, 49% 28%);
+        
+    
+        
+    }
+
+    .enterControls{
+        margin-right: 2rem;
+        margin-top:1rem;
+        display:flex;
+        justify-content:space-evenly;
+        width: 20%;
+        cursor: pointer;
+    }
+    .logBtn{
+       
+        margin-left: 1rem;
+       font-size:1vw;
+        padding:.5rem;
+      
+    }
+    
+    .signBtn{
+      
+        padding:.5rem;
+        border-radius: 8px;
+        width:3rem;
+        height:1.5rem;
+        margin-top: 0.3rem;
+      
+    
+    }
+    .clock2 {
+       
+        width: 1950px;
+        height: 1950px;
+         top: -65%;
+        right: 15%;
+        
+      
+      }
+}
+
+
+@media(max-width:500px){
+    .halfoval{
+        height:70%;
+        width:70%;
+        clip-path: circle(56.1% at 26% 26%);
+    }
+    .shapesquere{
+        width: 50px;
+        height:40px;
+    }
+    
+    .overlayContent{
+   
+        top:15%;
+        left: 25%;
+        width:55%;
+        height:21%;
+
+    
+        
+    }
+
+    .sectext{
+      font-size: 2vw;
+    }
+    
+    .countdown{
+        display:flex;
+        width:100%;
+        justify-content:space-between;  
+        
+    }
+
+    .emailInput{
+ 
+   
+        width:60%;
+        height:20px;  
+       
+        
+      }
+      
+      .submitButt{
+         
+          width:30px;
+          height:25px;
+          margin-left: 0.5rem;
+          border-radius:5px;
+       
+      }
+      ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+   
+     
+        font-size: 1.5vw;
+    }
+    :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+        
+     
+        font-size: 1.5vw;
+    }
+    ::-moz-placeholder { /* Mozilla Firefox 19+ */
+       
+         
+        font-size: 1.5vw;
+    }
+    :-ms-input-placeholder { /* Internet Explorer 10-11 */
+      
+        font-size: 1.5vw;
+    }
+
+    .firstshape{
+        height: 100vh;
+        width:50vw;
+        
+        clip-path: polygon(40% 0, 100% 0, 100% 53%, 100% 81%, 100% 100%, 34% 100%, 47% 80%, 53% 55%, 49% 28%);
+    
+        
+    }
+
+    .enterControls{
+        margin-right: 2rem;
+        margin-top:1rem;
+        display:flex;
+        justify-content:space-evenly;
+        width: 20%;
+        cursor: pointer;
+    }
+    .logBtn{
+       
+        margin-left: 1rem;
+       font-size:2vw;
+        padding:.5rem;
+        margin-top:0rem;
+    }
+    
+    .signBtn{
+      
+        padding:.5rem;
+        border-radius: 8px;
+        width:2rem;
+        height:1rem;
+      
+    
+    }
+
+    .clock2 {
+       
+        width: 1850px;
+        height: 1850px;
+         top: -65%;
+        right: 7%;
+        
+      
+      }
+    
+}
+
